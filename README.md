@@ -62,7 +62,7 @@ cd claude-code-telegram-multibot
 
 Then, ask your claude code to read this whole repo, and then it will know everything about how to do 🔥!
 
-## 💼 Recommended Usage
+## ‼️ Recommended Usage
 
 - Step 1, use this method to deploy`your first Telegram chatting window`, connect`your first Claude code terminal`(Manager)
 - Step 2, use`your first Telegram chatting window`you just deployed, to deploy the following Claude code terminal (workers)

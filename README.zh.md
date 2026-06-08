@@ -4,7 +4,7 @@
 
 让 Claude Code 每个项目目录绑定一个独立的 Telegram bot · 互不干扰 · 切项目只需在 Telegram 切聊天
 
-> **太长不看版** —— 把官方 [`telegram` 插件](https://github.com/anthropics/claude-plugins-official) 配上几个 shell 函数和一份 Claude Code skill，让每个项目目录拥有自己的 Telegram bot。切项目只需在 Telegram 里换聊天，不再需要切终端。
+> **太长不看版** —— 把官方 [`telegram 插件`](https://github.com/anthropics/claude-plugins-official) 配上几个 shell 函数和一份 Claude Code skill，让每个项目目录拥有自己的 Telegram bot。切项目只需在 Telegram 里换聊天，不再需要切终端。
 >
 > 不过，这个skills当然不止可以用于**Claude code**，它当然可以直接迁移到**Codex/Open Claw等其它agent平台**。当然，这个skills也当然不止可以用于**Telegram**的部署，它也可以直接迁移到WhatsAPP/Slack/Discord/QQ/WeChat/iMessages/...有待大家一起开发！
 
@@ -62,7 +62,7 @@ cd claude-code-telegram-multibot
 
 然后，打开Claude code，让它直接读整个GitHub仓库。一看就明白🔥！
 
-## 💼 推荐的使用用法
+## ‼️ 推荐的使用用法
 
 - 第一步，用该方法部署`第一个Telegram聊天窗口`，连接`第一个Claude code终端`（主管）
 - 第二步，用刚刚部署`第一个Telegram聊天窗口`，来部署后续的项目窗口（员工）
