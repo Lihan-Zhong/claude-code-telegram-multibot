@@ -1,10 +1,10 @@
-[English](README.md) · **中文**
+[🇺🇸English](README.md) · **🇨🇳中文**
 
 # claude-code-telegram-multibot
 
 让 Claude Code 每个项目目录绑定一个独立的 Telegram bot · 互不干扰 · 切项目只需在 Telegram 切聊天
 
-> **太长不看版** —— 把官方 [`telegram` 插件](https://github.com/anthropics/claude-plugins-official) 配上几个 shell 函数和一份 Claude Code skill，让每个项目目录拥有自己的 Telegram bot。切项目只需在 Telegram 里换聊天，不再需要切终端。
+> **太长不看版** —— 把官方 `[telegram` 插件](https://github.com/anthropics/claude-plugins-official) 配上几个 shell 函数和一份 Claude Code skill，让每个项目目录拥有自己的 Telegram bot。切项目只需在 Telegram 里换聊天，不再需要切终端。
 >
 > 不过，这个skills当然不止可以用于**Claude code**，它当然可以直接迁移到**Codex/Open Claw等其它agent平台**。当然，这个skills也当然不止可以用于**Telegram**的部署，它也可以直接迁移到WhatsAPP/Slack/Discord/QQ/WeChat/iMessages/...有待大家一起开发！
 
@@ -127,10 +127,10 @@ ln -s ~/.claude/channels/telegram ~/.claude-telegram/$(basename "$HOME")
 
 ## 🐛 已知问题
 
-> 完整排查清单见 [`SKILL.md`](SKILL.md)。
+> 完整排查清单见 `[SKILL.md](SKILL.md)`。
 
-- **`/start` 静默失败。** 改发普通消息（`hi`、`test`）。插件的 `/start` handler 有已知的回复送达问题。但这个问题不需要担心，你只要对Telegram的聊天窗口，发`任意消息`就好了！
-- **`/telegram:access pair` 报 "code not found"。** 官方 skill 硬编码 `~/.claude/channels/telegram/access.json`，不尊重 `TELEGRAM_STATE_DIR`。改用本仓库的 `claude-tg-pair`，或按 SKILL.md 走手动文件编辑流程。
+- `**/start` 静默失败。** 改发普通消息（`hi`、`test`）。插件的 `/start` handler 有已知的回复送达问题。但这个问题不需要担心，你只要对Telegram的聊天窗口，发`任意消息`就好了！
+- `**/telegram:access pair` 报 "code not found"。** 官方 skill 硬编码 `~/.claude/channels/telegram/access.json`，不尊重 `TELEGRAM_STATE_DIR`。改用本仓库的 `claude-tg-pair`，或按 SKILL.md 走手动文件编辑流程。
 - **MCP "failed — Skipping connection" 被缓存。** 在 Claude Code 里跑 `/doctor` 然后 `/mcp`，`/mcp` 提供手动重试。通常是启动时 PID race 的瞬时问题，重试一次就好。
 - **会话中途 `stop_reason: refusal`。** Anthropic 安全分类器对体积过大的 session 可能假阳性。恢复方法：`/exit` 后用 `claude-tg`（**不带 `-c`/`-r`**，否则会复活被污染的 session），通过读文件重建上下文。预防：单次 tool 输出控制在小尺寸（`head -5` 而不是 `cat`），大结果落到文件里、引用路径而不是粘贴内容。
 - **HPC 多节点：`bot.pid` 看上去死了但 Telegram 还能通。** Bot server 可能在另一个计算节点；PID 数字跨节点没意义。信 `access.json` 和 `approved/`，别盲信 `ps -p <pid>`。
@@ -151,4 +151,4 @@ ln -s ~/.claude/channels/telegram ~/.claude-telegram/$(basename "$HOME")
 
 ## 📜 License
 
-MIT —— 见 [`LICENSE`](LICENSE)。
+MIT —— 见 `[LICENSE](LICENSE)`。

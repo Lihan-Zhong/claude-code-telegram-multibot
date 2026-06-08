@@ -1,10 +1,10 @@
-**English** · [中文](README.zh.md)
+**🇺🇸English** · [🇨🇳中文](README.zh.md)
 
 # claude-code-telegram-multibot
 
 One dedicated Telegram bot per Claude Code project · independent state · zero cross-talk
 
-> **TL;DR** — pair the official [`telegram` plugin](https://github.com/anthropics/claude-plugins-official) with a few shell functions and a Claude Code skill, so each project directory gets its own Telegram bot. Switch projects in Telegram by switching chats, not terminals.
+> **TL;DR** — pair the official [`telegram plugin`](https://github.com/anthropics/claude-plugins-official) with a few shell functions and a Claude Code skill, so each project directory gets its own Telegram bot. Switch projects in Telegram by switching chats, not terminals.
 >
 > However, this skill is certainly not only applicable to **Claude code**; it can certainly be directly migrated to **other agent platforms** such as **Codex/OpenClaw**. The skills and of course, of course, not only can be used for deployment of **Telegram**, it can also directly to WhatsAPP/Slack/Discord/QQ/WeChat iMessages /... It's waiting for everyone to develop together!
 
