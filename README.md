@@ -4,6 +4,8 @@
 
 One dedicated Telegram bot per Claude Code project · independent state · zero cross-talk
 
+> **Hit Telegram's 20-bot @BotFather cap?** Sibling project [`claude-code-discord-multibot`](https://github.com/Lihan-Zhong/claude-code-discord-multibot) ports the same architecture to Discord, where there's effectively no bot count limit — plus you get bonus features like `fetch_messages`, bidirectional reactions, and multi-bot collaboration in shared channels.
+
 > **TL;DR** — pair the official [`telegram plugin`](https://github.com/anthropics/claude-plugins-official) with a few shell functions and a Claude Code skill, so each project directory gets its own Telegram bot. Switch projects in Telegram by switching chats, not terminals.
 >
 > However, this skill is certainly not only applicable to **Claude code**; it can certainly be directly migrated to **other agent platforms** such as **Codex/OpenClaw**. The skills and of course, of course, not only can be used for deployment of **Telegram**, it can also directly to WhatsAPP/Slack/Discord/QQ/WeChat iMessages /... It's waiting for everyone to develop together!
@@ -147,7 +149,7 @@ PRs welcome, especially:
 
 - A native `/start` reply fix (upstream PR to `claude-plugins-official`).
 - Variant-aware `claude-tg-pair` (currently only handles the primary bot's state dir).
-- A sister `claude-code-discord-multibot` adaptation — Discord has an official plugin with the same architecture and would benefit from the same workaround.
+- The Discord sibling now exists at [`claude-code-discord-multibot`](https://github.com/Lihan-Zhong/claude-code-discord-multibot) — contributions to either repo welcome.
 
 ## 📜 License
 

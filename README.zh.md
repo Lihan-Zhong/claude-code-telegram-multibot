@@ -4,6 +4,8 @@
 
 让 Claude Code 每个项目目录绑定一个独立的 Telegram bot · 互不干扰 · 切项目只需在 Telegram 切聊天
 
+> **撞上 Telegram @BotFather 的 20 bot 上限？** 姐妹项目 [`claude-code-discord-multibot`](https://github.com/Lihan-Zhong/claude-code-discord-multibot) 把同样的架构搬到 Discord，那边没有实质 bot 数量上限 —— 还附带 `fetch_messages` 消息历史查询、双向 reactions、多 bot 共享 channel 协作 这些 Discord 独家功能。
+
 > **太长不看版** —— 把官方 [`telegram 插件`](https://github.com/anthropics/claude-plugins-official) 配上几个 shell 函数和一份 Claude Code skill，让每个项目目录拥有自己的 Telegram bot。切项目只需在 Telegram 里换聊天，不再需要切终端。
 >
 > 不过，这个skills当然不止可以用于**Claude code**，它当然可以直接迁移到**Codex/Open Claw等其它agent平台**。当然，这个skills也当然不止可以用于**Telegram**的部署，它也可以直接迁移到WhatsAPP/Slack/Discord/QQ/WeChat/iMessages/...有待大家一起开发！
@@ -147,7 +149,7 @@ ln -s ~/.claude/channels/telegram ~/.claude-telegram/$(basename "$HOME")
 
 - 修 `/start` 静默失败（最好直接给 `claude-plugins-official` 提 upstream PR）。
 - 让 `claude-tg-pair` 支持 alt 变体（目前只能处理主 bot 的 state 目录）。
-- 做一个姐妹仓库 `claude-code-discord-multibot` —— Discord 有官方插件且架构相似，同样会受益于这套绕过方案。
+- Discord 姐妹版已存在: [`claude-code-discord-multibot`](https://github.com/Lihan-Zhong/claude-code-discord-multibot) —— 两个仓库都欢迎 PR。
 
 ## 📜 License
 
